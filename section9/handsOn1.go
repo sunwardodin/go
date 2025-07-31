@@ -3,5 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello, World!")
+	F := 8
+
+	fmt.Printf("Here is: %T \n", F)
 }
