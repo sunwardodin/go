@@ -12,9 +12,7 @@ func main() {
 	fmt.Println(s1)
 	fmt.Println(s2)
 
-	s3 := puppy.BigBark()
-	fmt.Println(s3)
-	s4 := puppy.BigBark()
-	fmt.Println(s4)
+	fmt.Println(puppy.Bark())
+	fmt.Println(puppy.Barks())
 
 }
