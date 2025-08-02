@@ -2,8 +2,11 @@ package main
 
 import "fmt"
 
-func main() {
-	F := 8
+func Bark() string {
+	s1 := "Woof!"
+	return s1
+}
 
-	fmt.Printf("Here is: %T \n", F)
+func main() {
+	fmt.Printf("Here is: %v \n", Bark())
 }
