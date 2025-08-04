@@ -12,7 +12,8 @@ func main() {
 	s1 := aloha("George")
 	fmt.Println(s1)
 
-	fmt.Println(dogYears("Drew", 29))
+	d1, n := dogYears("Drew", 29)
+	fmt.Println(d1, n)
 }
 
 func foo() {
