@@ -15,6 +15,9 @@ func genProb() bool {
 	answer := 0
 	cAnswer := 0
 
+	//d1 := min + rand.Float64()*(max-min)
+	//d2 := min + rand.Float64()*(max-min)
+
 	switch randomOp {
 	case "+":
 		cAnswer = n1 + n2
@@ -37,6 +40,15 @@ func genProb() bool {
 		if answer != cAnswer {
 			return false
 		}
+		/*
+			case "/":
+				cAnswer = n1 % n2
+				fmt.Printf("What is %v '%' %v\n", n1, n2)
+				fmt.Scanln(&answer)
+				if answer != cAnswer {
+					return false
+				}
+		*/
 	}
 	/* This is the previous version I used before using a switch
 	if randomOp == "+" {
@@ -73,12 +85,15 @@ func main() {
 	fmt.Print("Ready for a problem?: ")
 	fmt.Scanln(&a)
 	if a == "yes" || a == "Yes" {
+		score := 0
 		for i < 1 {
 			b = genProb()
 			if !b {
-				fmt.Println("Game Over Brewski!\n-Computer")
+				fmt.Println("\nYour score was:", score)
+				fmt.Println("\nGame Over Brewski!\n-Computer")
 				i += 1
 			}
+			score += 1
 		}
 	} else {
 		fmt.Println("Lame dude")
