@@ -7,20 +7,18 @@ import (
 
 // Math Game
 func genProb() bool {
-	sl := []string{"+", "-", "/", "*"}
-	randomOp := sl[rand.Intn(3)]
+	sl := []string{"+", "-", "/", "*", "%"}
+	randomOp := sl[rand.Intn(4)]
 
 	n1 := rand.Intn(100)
 	n2 := rand.Intn(100)
 	answer := 0
 	cAnswer := 0
 
-	/*
-		d1 := 50 + rand.Float32()*(100-50)
-		d2 := 10 + rand.Float32()*(50-10)
-		var dAnswer float32
-		var cDAnswer float32
-	*/
+	d1 := 50 + rand.Intn(100-50)
+	d2 := 10 + rand.Intn(50-10)
+	var dAnswer int
+	var cDAnswer int
 
 	switch randomOp {
 	case "+":
@@ -44,15 +42,22 @@ func genProb() bool {
 		if answer != cAnswer {
 			return false
 		}
-		/*
-			case "/":
-				cDAnswer = d1 / d2
-				fmt.Printf("What is %v / %v\n", d1, d2)
-				fmt.Scanln(&dAnswer)
-				if dAnswer != cDAnswer {
-					return false
-				}
-		*/
+
+	case "/":
+		cDAnswer = d1 / d2
+		fmt.Printf("What is %v / %v\n", d1, d2)
+		fmt.Scanln(&dAnswer)
+		if dAnswer != cDAnswer {
+			return false
+		}
+	case "%":
+		cDAnswer = d1 % d2
+		fmt.Printf("What is %v '%' %v \n", d1, d2)
+		fmt.Scanln(&dAnswer)
+		if dAnswer != cDAnswer {
+			return false
+		}
+
 	}
 	return true
 }
@@ -77,7 +82,8 @@ func main() {
 
 	fmt.Print("Ready for a problem?: ")
 	fmt.Scanln(&a)
-	if a == "yes" || a == "Yes" {
+	switch a {
+	case "yes":
 		score := 0
 		for i < 1 {
 			b = genProb()
@@ -88,7 +94,7 @@ func main() {
 			}
 			score += 1
 		}
-	} else if a == "hardcore" {
+	case "hardcore":
 		score := 0
 		for i < 1 {
 			b = hardCore()
@@ -99,7 +105,7 @@ func main() {
 			}
 			score += 1
 		}
-	} else {
+	default:
 		fmt.Println("Lame dude")
 		fmt.Println("-Computer")
 	}
