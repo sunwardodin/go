@@ -163,21 +163,30 @@ func main() {
 	fmt.Scanln(&a)
 
 	if a == "yes" || a == "Yes" {
-		var d string
-		fmt.Print("What mode? ")
-		fmt.Scanln(&d)
+		for i := 0; i < 1; {
 
-		switch d {
-		case "addition":
-			add()
-		case "subtraction":
-			subtract()
-		case "multiplication":
-			multiply()
-		case "division":
-			divide()
-		default:
-			fmt.Println("That isn't a mode. Try again.")
+			var d string
+			fmt.Print("What mode? ")
+			fmt.Scanln(&d)
+
+			switch d {
+			case "addition":
+				add()
+			case "subtraction":
+				subtract()
+			case "multiplication":
+				multiply()
+			case "division":
+				divide()
+			default:
+				fmt.Println("That isn't a mode. Try again.")
+			}
+			var b string
+			fmt.Print("Want to play again? ")
+			fmt.Scanln(&b)
+			if b == "no" {
+				i += 2
+			}
 		}
 	} else {
 		fmt.Println("Lame dude")
