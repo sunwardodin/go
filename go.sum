@@ -1,6 +1,6 @@
 github.com/sunwardodin/dog1 v0.0.0-20250801143224-eff923082560 h1:qIvAhhHM70fmSF+cuKM5qMcovJa+Hmz2ORkxyFzFxQg=
 github.com/sunwardodin/dog1 v0.0.0-20250801143224-eff923082560/go.mod h1:bVdFQnft0brV/LKYYXzluoLPz/grkgjlswYrr+XI6nM=
-github.com/sunwardodin/puppy1 v0.0.0-20250801124918-9202aa04b036 h1:m2g4ID+6/gZCCaSSdy7r2jpXoyznNGxLKPxQkCyIo/k=
-github.com/sunwardodin/puppy1 v0.0.0-20250801124918-9202aa04b036/go.mod h1:chcHIp0ugX1XKsXtBY1ckEnuEa1xP7iFJ8r707V9IhI=
 github.com/sunwardodin/puppy1 v0.0.0-20250801145216-ae7c16ef2494 h1:zL3JmU2ZykcSty5ypdvkZSZinYa/R8Kt+rFxl/qhnoM=
 github.com/sunwardodin/puppy1 v0.0.0-20250801145216-ae7c16ef2494/go.mod h1:YyGEFFk9CZXNSlsZ5yNKtNwcR+B21Ps8wwFI9lj8Kho=
+golang.org/x/exp v0.0.0-20250813145105-42675adae3e6 h1:SbTAbRFnd5kjQXbczszQ0hdk3ctwYf3qBNH9jIsGclE=
+golang.org/x/exp v0.0.0-20250813145105-42675adae3e6/go.mod h1:4QTo5u+SEIbbKW1RacMZq1YEfOBqeXa19JeshGi+zc4=
