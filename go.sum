@@ -2,5 +2,7 @@ github.com/sunwardodin/dog1 v0.0.0-20250801143224-eff923082560 h1:qIvAhhHM70fmSF
 github.com/sunwardodin/dog1 v0.0.0-20250801143224-eff923082560/go.mod h1:bVdFQnft0brV/LKYYXzluoLPz/grkgjlswYrr+XI6nM=
 github.com/sunwardodin/puppy1 v0.0.0-20250801145216-ae7c16ef2494 h1:zL3JmU2ZykcSty5ypdvkZSZinYa/R8Kt+rFxl/qhnoM=
 github.com/sunwardodin/puppy1 v0.0.0-20250801145216-ae7c16ef2494/go.mod h1:YyGEFFk9CZXNSlsZ5yNKtNwcR+B21Ps8wwFI9lj8Kho=
+golang.org/x/crypto v0.41.0 h1:WKYxWedPGCTVVl5+WHSSrOBT0O8lx32+zxmHxijgXp4=
+golang.org/x/crypto v0.41.0/go.mod h1:pO5AFd7FA68rFak7rOAGVuygIISepHftHnr8dr6+sUc=
 golang.org/x/exp v0.0.0-20250813145105-42675adae3e6 h1:SbTAbRFnd5kjQXbczszQ0hdk3ctwYf3qBNH9jIsGclE=
 golang.org/x/exp v0.0.0-20250813145105-42675adae3e6/go.mod h1:4QTo5u+SEIbbKW1RacMZq1YEfOBqeXa19JeshGi+zc4=
