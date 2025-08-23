@@ -9,41 +9,27 @@ import (
 
 func add() {
 	score := 0
+	min := 10
+	max := 100
 
-	var hE string
-	fmt.Printf("hard or easy? ")
-	fmt.Scanln(&hE)
-
-	if hE == "hard" {
-		for i := 0; i < 1; {
-			n1 := rand.Intn(10000)
-			n2 := rand.Intn(10000)
+	for i := 0; i <= 1; {
+		fmt.Println("----------------")
+		for j := 0; j <= 1; j++ {
+			n1 := min + rand.Intn(max+min)
+			n2 := min + rand.Intn(max+min)
 			answer := 0
 			cAnswer := n1 + n2
 
-			fmt.Printf("What is %v + %v\n", n1, n2)
+			fmt.Printf("%v + %v = ", n1, n2)
 			fmt.Scanln(&answer)
 			if answer != cAnswer {
-				i++
+				i += 2
 				break
 			}
 			score++
 		}
-	} else if hE == "easy" {
-		for i := 0; i < 1; {
-			n1 := rand.Intn(100)
-			n2 := rand.Intn(100)
-			answer := 0
-			cAnswer := n1 + n2
-
-			fmt.Printf("What is %v + %v\n", n1, n2)
-			fmt.Scanln(&answer)
-			if answer != cAnswer {
-				i++
-				break
-			}
-			score++
-		}
+		min += 250
+		max += 250
 	}
 
 	fmt.Println("\nYour score was:", score)
@@ -52,41 +38,27 @@ func add() {
 
 func subtract() {
 	score := 0
+	min := 10
+	max := 100
 
-	var hE string
-	fmt.Printf("hard or easy? ")
-	fmt.Scanln(&hE)
-
-	if hE == "hard" {
-		for i := 0; i < 1; {
-			n1 := rand.Intn(10000)
-			n2 := rand.Intn(10000)
+	for i := 0; i <= 1; {
+		fmt.Println("----------------")
+		for j := 0; j <= 1; j++ {
+			n1 := min + rand.Intn(max+min)
+			n2 := min + rand.Intn(max+min)
 			answer := 0
 			cAnswer := n1 - n2
 
-			fmt.Printf("What is %v - %v\n", n1, n2)
+			fmt.Printf("%v - %v = ", n1, n2)
 			fmt.Scanln(&answer)
 			if answer != cAnswer {
-				i++
+				i += 2
 				break
 			}
 			score++
 		}
-	} else if hE == "easy" {
-		for i := 0; i < 1; {
-			n1 := rand.Intn(100)
-			n2 := rand.Intn(100)
-			answer := 0
-			cAnswer := n1 - n2
-
-			fmt.Printf("What is %v - %v\n", n1, n2)
-			fmt.Scanln(&answer)
-			if answer != cAnswer {
-				i++
-				break
-			}
-			score++
-		}
+		min += 250
+		max += 250
 	}
 
 	fmt.Println("\nYour score was:", score)
@@ -95,41 +67,27 @@ func subtract() {
 
 func multiply() {
 	score := 0
+	min := 10
+	max := 100
 
-	var hE string
-	fmt.Printf("hard or easy? ")
-	fmt.Scanln(&hE)
-
-	if hE == "hard" {
-		for i := 0; i < 1; {
-			n1 := rand.Intn(10000)
-			n2 := rand.Intn(10000)
+	for i := 0; i <= 1; {
+		fmt.Println("----------------")
+		for j := 0; j <= 1; j++ {
+			n1 := min + rand.Intn(max+min)
+			n2 := min + rand.Intn(max+min)
 			answer := 0
 			cAnswer := n1 * n2
 
-			fmt.Printf("What is %v * %v\n", n1, n2)
+			fmt.Printf("%v * %v = ", n1, n2)
 			fmt.Scanln(&answer)
 			if answer != cAnswer {
-				i++
+				i += 2
 				break
 			}
 			score++
 		}
-	} else if hE == "easy" {
-		for i := 0; i < 1; {
-			n1 := rand.Intn(100)
-			n2 := rand.Intn(100)
-			answer := 0
-			cAnswer := n1 * n2
-
-			fmt.Printf("What is %v * %v\n", n1, n2)
-			fmt.Scanln(&answer)
-			if answer != cAnswer {
-				i++
-				break
-			}
-			score++
-		}
+		min += 250
+		max += 250
 	}
 
 	fmt.Println("\nYour score was:", score)
@@ -193,3 +151,41 @@ func main() {
 		fmt.Println("-Computer")
 	}
 }
+
+/*
+var hE string
+	fmt.Printf("hard or easy? ")
+	fmt.Scanln(&hE)
+
+	if hE == "hard" {
+		for i := 0; i < 1; {
+			n1 := rand.Intn(10000)
+			n2 := rand.Intn(10000)
+			answer := 0
+			cAnswer := n1 + n2
+
+			fmt.Printf("What is %v + %v\n", n1, n2)
+			fmt.Scanln(&answer)
+			if answer != cAnswer {
+				i++
+				break
+			}
+			score++
+		}
+	} else if hE == "easy" {
+		for i := 0; i < 1; {
+			n1 := rand.Intn(100)
+			n2 := rand.Intn(100)
+			answer := 0
+			cAnswer := n1 + n2
+
+			fmt.Printf("What is %v + %v\n", n1, n2)
+			fmt.Scanln(&answer)
+			if answer != cAnswer {
+				i++
+				break
+			}
+			score++
+		}
+	}
+*/
